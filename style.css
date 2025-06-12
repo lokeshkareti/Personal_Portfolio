@@ -1,16 +1,16 @@
-/* Reset some basics */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body and background */
+/* Base */
 body {
   background: #f9f9f9;
+  color: #333;
   line-height: 1.6;
   padding: 20px;
   max-width: 900px;
@@ -20,22 +20,37 @@ body {
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 header h1 {
   font-size: 2.8rem;
   color: #2c3e50;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #34495e;
   font-weight: 600;
 }
 
-/* Section titles */
+/* Profile Image */
+.profile-pic {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
 section h2 {
   font-size: 2rem;
   color: #2980b9;
@@ -45,18 +60,15 @@ section h2 {
   font-weight: 700;
 }
 
-/* About section paragraph */
-#about p {
+section p {
   font-size: 1.1rem;
-  max-width: 700px;
-  margin-bottom: 30px;
   color: #2d3436;
 }
 
-/* Lists styling */
+/* Lists */
 ul {
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 ul li {
@@ -65,28 +77,17 @@ ul li {
   padding: 12px 18px;
   border-radius: 6px;
   font-size: 1.05rem;
-  color: #2c3e50;
   box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
 }
 
-ul li strong {
+/* Links */
+a {
   color: #2980b9;
-}
-
-/* Contact links styling */
-#contact p, #contact a {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-
-#contact a {
   text-decoration: none;
-  color: #2980b9;
   font-weight: 600;
 }
 
-#contact a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -94,24 +95,20 @@ ul li strong {
 footer {
   text-align: center;
   padding: 15px 0;
-  margin-top: 50px;
   border-top: 1px solid #bdc3c7;
   color: #7f8c8d;
   font-size: 0.9rem;
+  margin-top: 40px;
 }
 
-/* Responsive for smaller devices */
+/* Responsive */
 @media (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
-
   header h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   section h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   ul li {
