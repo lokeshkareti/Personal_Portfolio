@@ -18,33 +18,33 @@ body {
 }
 
 /* Header */
-header {
-  text-align: center;
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-header h1 {
-  font-size: 2.8rem;
-  color: #2c3e50;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #34495e;
-  font-weight: 600;
-}
-
-/* Profile Image */
 .profile-pic {
-  display: block;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 20px auto 0 auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 10px; /* Space between image and name */
+}
+
+.profile-name {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+/* Optional subtitle under name */
+header p {
+  font-size: 1.2rem;
+  color: #34495e;
+  font-weight: 600;
 }
 
 /* Sections */
@@ -104,7 +104,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 600px) {
-  header h1 {
+  .profile-name {
     font-size: 2rem;
   }
 
@@ -121,3 +121,4 @@ footer {
     height: 120px;
   }
 }
+
