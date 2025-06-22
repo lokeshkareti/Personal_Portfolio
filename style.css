@@ -13,6 +13,7 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 20px;
+  padding-top: 100px;   /* Push body content down from navbar */
   max-width: 960px;
   margin: auto;
   opacity: 0;
@@ -31,10 +32,13 @@ body {
   justify-content: center;
   gap: 20px;
   background: #2980b9;
-  padding: 12px 0;
-  position: sticky;
+  padding: 16px 0;
+  position: fixed;    /* Fixed navbar */
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .navbar a {
@@ -52,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -174,6 +179,7 @@ footer {
 @media (max-width: 768px) {
   body {
     padding: 10px;
+    padding-top: 80px;
   }
 
   .profile-pic {
